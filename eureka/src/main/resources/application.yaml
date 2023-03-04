@@ -1,0 +1,13 @@
+spring:
+  application:
+    name:eureka
+
+server:
+  port: 8761
+
+
+#Eureka config server
+eureka:
+  client:
+    registerWithEureka: false # Se impostiamo questa proprietà come true, durante l'avvio del server, il client integrato proverà a registrarsi con il server Eureka
+    fetchRegistry: false      # Se configuriamo questa proprietà come true, il client integrato proverà a recuperare il registro Eureka
