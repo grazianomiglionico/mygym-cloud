@@ -11,13 +11,10 @@
 	</parent>
 
 	<groupId>it.corso</groupId>
-	<artifactId>eureka</artifactId>
+	<artifactId>config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eureka</name>
-	<description>Eureka server</description>
-
-	<!-- It must be present to run a jar -->
-	<packaging>jar</packaging>
+	<name>config-server</name>
+	<description>Config Server</description>
 
 	<properties>
 		<java.version>17</java.version>
@@ -25,14 +22,15 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
+
 	</dependencies>
 
 	<build>

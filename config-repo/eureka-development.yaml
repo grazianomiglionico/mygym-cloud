@@ -1,0 +1,27 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: 'http://localhost:9090'
+        username: 'admin'
+        password: 'admin'
+
+server:
+  port: 8761
+
+#Eureka config server
+eureka:
+  client:
+    registerWithEureka: false # Se impostiamo questa proprieta come true, durante l'avvio del server, il client integrato provera a registrarsi con il server Eureka
+    fetchRegistry: false      # Se configuriamo questa proprieta come true, il client integrato prover� a recuperare il registro Eureka
+
+
+
+# Starting with Spring Boot 2, endpoints other than health and info are not exposed by default.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    health:
+      show-details: always
