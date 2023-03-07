@@ -1,4 +1,14 @@
 spring:
+  datasource:
+    driver-class-name: 'org.mariadb.jdbc.Driver'
+    url: 'jdbc:mariadb://localhost:3306/mygym?serverTimezone=UTC'
+    username: 'root'
+    password: 'root'
+  jpa:
+    hibernate:
+      dialect: 'org.hibernate.dialect.MySQL8Dialect'
+      ddl-auto: update
+      show-sql: true
   boot:
     admin:    # Admin client
       client:

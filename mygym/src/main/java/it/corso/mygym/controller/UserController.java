@@ -51,4 +51,7 @@ public interface UserController {
     @PutMapping("/{id}")
     ResponseEntity<User> update(@PathVariable(value = "id") Long id,
                                 @Valid @RequestBody UserDto userDto) throws UserNotFoundException;
+
+    @GetMapping("/{id}")
+    ResponseEntity<User> findById(@PathVariable(value = "id") Long id);
 }
