@@ -30,6 +30,7 @@
         <module>eureka</module>
         <module>admin</module>
         <module>mygym</module>
+        <module>booking</module>
     </modules>
 
     <dependencies>
